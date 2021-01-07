@@ -104,7 +104,6 @@ public class Accounts implements Comparable {
                 Objects.equals(custId, accounts.custId);
     }
 
-
     @Override
     public int compareTo(Object o) {
         Accounts that = (Accounts) o;

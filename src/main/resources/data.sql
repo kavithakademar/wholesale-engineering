@@ -1,5 +1,5 @@
 insert into accounts(account_id,cust_id,account_name,balance_date,currency,balance,account_type)
-values('1000000007','1001','Salary Account','2020-12-09','USD',1000,'Savings');
+values('1000000007','1001','Salary Account','2020-12-09','USD',15000,'Savings');
 insert into accounts(account_id,cust_id,account_name,balance_date,currency,balance,account_type)
 values('1000000008','1001','Fixed Deposit','2019-12-09','USD',2000,'Savings');
 insert into accounts(account_id,cust_id,account_name,balance_date,currency,balance,account_type)
