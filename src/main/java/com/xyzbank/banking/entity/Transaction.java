@@ -1,4 +1,4 @@
-package com.xyzbank.banking.model;
+package com.xyzbank.banking.entity;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;

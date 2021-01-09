@@ -1,6 +1,6 @@
 package com.xyzbank.banking.repo;
 
-import com.xyzbank.banking.model.Accounts;
+import com.xyzbank.banking.entity.Accounts;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;

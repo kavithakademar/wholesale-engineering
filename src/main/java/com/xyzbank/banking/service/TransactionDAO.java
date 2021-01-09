@@ -1,8 +1,8 @@
 package com.xyzbank.banking.service;
 
 import com.xyzbank.banking.exception.AccountNotFoundException;
-import com.xyzbank.banking.model.Accounts;
-import com.xyzbank.banking.model.Transaction;
+import com.xyzbank.banking.entity.Accounts;
+import com.xyzbank.banking.entity.Transaction;
 import com.xyzbank.banking.repo.AccountRepository;
 import com.xyzbank.banking.repo.TransactionRepository;
 import com.xyzbank.banking.response.TransactionHistory;

@@ -1,7 +1,7 @@
 package com.xyzbank.banking.service;
 
 import com.xyzbank.banking.exception.CustomerNotFoundException;
-import com.xyzbank.banking.model.Accounts;
+import com.xyzbank.banking.entity.Accounts;
 import com.xyzbank.banking.repo.AccountRepository;
 import com.xyzbank.banking.response.AccountResponse;
 import org.junit.jupiter.api.BeforeEach;

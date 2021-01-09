@@ -1,7 +1,7 @@
 package com.xyzbank.banking.repo;
 
-import com.xyzbank.banking.model.Accounts;
-import com.xyzbank.banking.model.Transaction;
+import com.xyzbank.banking.entity.Accounts;
+import com.xyzbank.banking.entity.Transaction;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
