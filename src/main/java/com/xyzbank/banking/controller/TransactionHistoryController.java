@@ -1,7 +1,7 @@
 package com.xyzbank.banking.controller;
 
 import com.xyzbank.banking.response.TransactionHistory;
-import com.xyzbank.banking.service.TransactionDAO;
+import com.xyzbank.banking.service.Transactionervice;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -13,7 +13,7 @@ import java.util.Set;
 @RestController
 public class TransactionHistoryController {
     @Autowired
-    TransactionDAO transactionService;
+    Transactionervice transactionService;
 
     @GetMapping("/accounts/transaction")
     public ResponseEntity<Set<TransactionHistory>> transactionDetails(@RequestBody String accountId) {

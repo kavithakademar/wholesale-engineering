@@ -1,8 +1,8 @@
 package com.xyzbank.banking.service;
 
-import com.xyzbank.banking.exception.AccountNotFoundException;
 import com.xyzbank.banking.entity.Accounts;
 import com.xyzbank.banking.entity.Transaction;
+import com.xyzbank.banking.exception.AccountNotFoundException;
 import com.xyzbank.banking.repo.AccountRepository;
 import com.xyzbank.banking.repo.TransactionRepository;
 import com.xyzbank.banking.response.TransactionHistory;
@@ -15,8 +15,7 @@ import org.mockito.junit.jupiter.MockitoExtension;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.sql.Date;
-import java.util.Set;
-import java.util.TreeSet;
+import java.util.*;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
@@ -24,7 +23,7 @@ import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
 @ExtendWith(MockitoExtension.class)
-public class TransactionDAOTest {
+public class TransactionerviceTest {
     @Mock
     TransactionRepository transactionRepository;
 
@@ -32,12 +31,12 @@ public class TransactionDAOTest {
     AccountRepository accountRepository;
 
     @Autowired
-    TransactionDAO transactionService;
+    Transactionervice transactionService;
 
     @BeforeEach
     public void setUp() {
         MockitoAnnotations.initMocks(this);
-        transactionService = new TransactionDAO(transactionRepository, accountRepository);
+        transactionService = new Transactionervice(transactionRepository, accountRepository);
     }
 
     @Test
@@ -52,7 +51,7 @@ public class TransactionDAOTest {
                 Date.valueOf("2019-08-28"), 1000, false, accounts);
         Transaction trans3 = new Transaction("10003", "Debited from ATM",
                 Date.valueOf("2020-05-12"), 12000, false, accounts);
-
+        Stack<String> st = new Stack<>();
         Set<Transaction> transactions = new TreeSet<>();
         transactions.add(trans1);
         transactions.add(trans2);

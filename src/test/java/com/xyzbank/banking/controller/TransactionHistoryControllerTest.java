@@ -1,7 +1,7 @@
 package com.xyzbank.banking.controller;
 
 import com.xyzbank.banking.response.TransactionHistory;
-import com.xyzbank.banking.service.TransactionDAO;
+import com.xyzbank.banking.service.Transactionervice;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -29,7 +29,7 @@ public class TransactionHistoryControllerTest {
     TransactionHistoryController transactionHistoryController;
 
     @MockBean
-    TransactionDAO transactionService;
+    Transactionervice transactionService;
 
 
     @Autowired

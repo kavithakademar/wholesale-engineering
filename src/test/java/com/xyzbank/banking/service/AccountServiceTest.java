@@ -23,16 +23,16 @@ import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
 @ExtendWith(MockitoExtension.class)
-public class AccountDAOTest {
+public class AccountServiceTest {
     @Mock
     AccountRepository accountRepository;
     @Autowired
-    AccountDAO accountService;
+    AccountService accountService;
 
     @BeforeEach
     public void setUp() {
         MockitoAnnotations.initMocks(this);
-        accountService = new AccountDAO(accountRepository);
+        accountService = new AccountService(accountRepository);
     }
 
     @Test

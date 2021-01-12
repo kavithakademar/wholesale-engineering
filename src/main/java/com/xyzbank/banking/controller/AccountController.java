@@ -1,7 +1,7 @@
 package com.xyzbank.banking.controller;
 
 import com.xyzbank.banking.response.AccountResponse;
-import com.xyzbank.banking.service.AccountDAO;
+import com.xyzbank.banking.service.AccountService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -15,9 +15,9 @@ public class AccountController {
 
     @Autowired
 
-    AccountDAO accountService;
+    AccountService accountService;
 
-    public AccountController(AccountDAO accountService) {
+    public AccountController(AccountService accountService) {
         this.accountService = accountService;
     }
 

@@ -13,19 +13,19 @@ import java.util.Set;
 import java.util.TreeSet;
 
 @Service
-public class TransactionDAO {
+public class Transactionervice {
     @Autowired
     TransactionRepository transactionRepository;
     @Autowired
     AccountRepository accountRepository;
 
-    public TransactionDAO(TransactionRepository transactionRepository,
-                          AccountRepository accountRepository) {
+    public Transactionervice(TransactionRepository transactionRepository,
+                             AccountRepository accountRepository) {
         this.transactionRepository = transactionRepository;
         this.accountRepository = accountRepository;
     }
 
-    public TransactionDAO() {
+    public Transactionervice() {
 
     }
 

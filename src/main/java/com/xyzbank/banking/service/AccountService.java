@@ -11,15 +11,15 @@ import java.util.Set;
 import java.util.TreeSet;
 
 @Service
-public class AccountDAO {
+public class AccountService {
     @Autowired
     AccountRepository accountRepository;
 
-    public AccountDAO(AccountRepository accountRepository) {
+    public AccountService(AccountRepository accountRepository) {
         this.accountRepository = accountRepository;
     }
 
-    public AccountDAO() {
+    public AccountService() {
 
     }
 

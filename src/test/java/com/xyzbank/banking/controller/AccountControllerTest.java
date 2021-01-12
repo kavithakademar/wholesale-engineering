@@ -1,7 +1,7 @@
 package com.xyzbank.banking.controller;
 
 import com.xyzbank.banking.response.AccountResponse;
-import com.xyzbank.banking.service.AccountDAO;
+import com.xyzbank.banking.service.AccountService;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -29,7 +29,7 @@ public class AccountControllerTest {
     AccountController accountController;
 
     @MockBean
-    AccountDAO accountService;
+    AccountService accountService;
 
     @Autowired
     private MockMvc mockMvc;
